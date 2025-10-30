@@ -28,13 +28,13 @@ export default function InformacoesPage() {
   return (
     <main className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-primary/10 via-background to-accent/10">
+      <section className="relative py-20 bg-gradient-to-br from-[#A4D500]/10 via-background to-[#4DD0E1]/10">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-              <HelpCircle className="w-8 h-8 text-primary" />
+            <div className="w-16 h-16 bg-gradient-to-br from-[#A4D500]/20 to-[#4DD0E1]/20 rounded-full flex items-center justify-center mx-auto mb-6">
+              <HelpCircle className="w-8 h-8 text-[#5FBD5D]" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance">Informações</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance gradient-text">Informações</h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Perguntas frequentes sobre nossos serviços e processos ambientais
             </p>
@@ -53,7 +53,7 @@ export default function InformacoesPage() {
                 <AccordionItem
                   key={index}
                   value={`item-${index}`}
-                  className="border border-border rounded-lg px-6 bg-card hover:border-primary/30 transition-colors"
+                  className="border border-border rounded-lg px-6 bg-card hover:border-[#5FBD5D]/30 transition-colors"
                 >
                   <AccordionTrigger className="text-left hover:no-underline py-6">
                     <span className="font-semibold text-lg pr-4">{faq.question}</span>
@@ -79,13 +79,13 @@ export default function InformacoesPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:+5514998851685"
-                className="inline-flex items-center justify-center px-8 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
+                className="inline-flex items-center justify-center px-8 py-3 gradient-bg text-white rounded-lg font-medium hover:opacity-90 transition-opacity shadow-lg"
               >
                 Ligar agora
               </a>
               <a
                 href="mailto:ambientalcore@gmail.com"
-                className="inline-flex items-center justify-center px-8 py-3 bg-secondary text-secondary-foreground rounded-lg font-medium hover:bg-secondary/90 transition-colors"
+                className="inline-flex items-center justify-center px-8 py-3 bg-secondary text-secondary-foreground rounded-lg font-medium hover:bg-secondary/90 transition-colors shadow-lg"
               >
                 Enviar e-mail
               </a>

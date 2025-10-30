@@ -49,10 +49,10 @@ export default function SobrePage() {
   return (
     <main className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-primary/10 via-background to-accent/10">
+      <section className="relative py-20 bg-gradient-to-br from-[#A4D500]/10 via-background to-[#4DD0E1]/10">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance">Sobre Nós</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance gradient-text">Sobre Nós</h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Conheça a Core Ambiental e nossa equipe de especialistas dedicados à sustentabilidade
             </p>
@@ -79,10 +79,10 @@ export default function SobrePage() {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <Card className="border-2 border-primary/20">
+            <Card className="border-2 border-[#5FBD5D]/20">
               <CardContent className="p-8">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <Target className="w-6 h-6 text-primary" />
+                <div className="w-12 h-12 bg-gradient-to-br from-[#A4D500]/20 to-[#5FBD5D]/20 rounded-lg flex items-center justify-center mb-4">
+                  <Target className="w-6 h-6 text-[#5FBD5D]" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Missão</h3>
                 <p className="text-muted-foreground leading-relaxed">
@@ -92,10 +92,10 @@ export default function SobrePage() {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-accent/20">
+            <Card className="border-2 border-[#4DD0E1]/20">
               <CardContent className="p-8">
-                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
-                  <Eye className="w-6 h-6 text-accent" />
+                <div className="w-12 h-12 bg-gradient-to-br from-[#5FBD5D]/20 to-[#4DD0E1]/20 rounded-lg flex items-center justify-center mb-4">
+                  <Eye className="w-6 h-6 text-[#4DD0E1]" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Visão</h3>
                 <p className="text-muted-foreground leading-relaxed">
@@ -112,8 +112,8 @@ export default function SobrePage() {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-              <Users className="w-6 h-6 text-primary" />
+            <div className="w-12 h-12 bg-gradient-to-br from-[#A4D500]/20 to-[#4DD0E1]/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <Users className="w-6 h-6 text-[#5FBD5D]" />
             </div>
             <h2 className="text-3xl font-bold mb-4">Nossa Equipe</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -123,7 +123,7 @@ export default function SobrePage() {
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {team.map((member, index) => (
-              <Card key={index} className="overflow-hidden group hover:shadow-lg transition-all duration-300">
+              <Card key={index} className="overflow-hidden group hover:shadow-lg transition-all duration-300 border-2 hover:border-[#5FBD5D]/30">
                 <div className="aspect-square overflow-hidden bg-muted">
                   <img
                     src={member.image || "/placeholder.svg"}
@@ -133,7 +133,7 @@ export default function SobrePage() {
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-2">{member.name}</h3>
-                  <p className="text-primary font-medium mb-3">{member.role}</p>
+                  <p className="gradient-text font-medium mb-3">{member.role}</p>
                   <p className="text-sm text-muted-foreground leading-relaxed">{member.description}</p>
                 </CardContent>
               </Card>
@@ -156,11 +156,11 @@ export default function SobrePage() {
             {values.map((value, index) => (
               <Card
                 key={index}
-                className="text-center group hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                className="text-center group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-2 hover:border-[#5FBD5D]/30"
               >
                 <CardContent className="p-6">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                    <value.icon className="w-8 h-8 text-primary group-hover:text-primary-foreground transition-colors" />
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#A4D500]/20 to-[#4DD0E1]/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:from-[#A4D500]/40 group-hover:to-[#4DD0E1]/40 group-hover:scale-110 transition-all duration-300">
+                    <value.icon className="w-8 h-8 text-[#5FBD5D] transition-colors" />
                   </div>
                   <h3 className="text-lg font-bold mb-3">{value.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{value.description}</p>

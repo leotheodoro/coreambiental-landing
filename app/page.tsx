@@ -105,7 +105,7 @@ export default function HomePage() {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">Conheça nossos serviços</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance gradient-text">Conheça nossos serviços</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Soluções completas em consultoria ambiental e agrícola para o seu negócio
             </p>
@@ -113,16 +113,16 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-2 hover:border-[#5FBD5D]/30">
                 <CardContent className="p-6">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                    <service.icon className="w-6 h-6 text-primary group-hover:text-primary-foreground transition-colors" />
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#A4D500]/20 to-[#4DD0E1]/20 rounded-lg flex items-center justify-center mb-4 group-hover:from-[#A4D500]/40 group-hover:to-[#4DD0E1]/40 group-hover:scale-110 transition-all duration-300">
+                    <service.icon className="w-6 h-6 text-[#5FBD5D] transition-colors" />
                   </div>
                   <h3 className="text-xl font-bold mb-4 text-balance">{service.title}</h3>
                   <ul className="space-y-2">
                     {service.items.map((item, itemIndex) => (
                       <li key={itemIndex} className="text-sm text-muted-foreground flex items-start gap-2">
-                        <span className="text-primary mt-1">•</span>
+                        <span className="gradient-text mt-1">•</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -133,7 +133,7 @@ export default function HomePage() {
           </div>
 
           <div className="text-center mt-12">
-            <Button asChild size="lg" variant="outline">
+            <Button asChild size="lg" className="gradient-bg text-white hover:opacity-90 transition-opacity">
               <Link href="/servicos">Ver todos os serviços</Link>
             </Button>
           </div>

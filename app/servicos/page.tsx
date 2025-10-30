@@ -52,10 +52,10 @@ export default function ServicosPage() {
   return (
     <main className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-primary/10 via-background to-accent/10">
+      <section className="relative py-20 bg-gradient-to-br from-[#A4D500]/10 via-background to-[#4DD0E1]/10">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance">Nossos Serviços</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance gradient-text">Nossos Serviços</h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Soluções completas em consultoria ambiental e agrícola para empresas, órgãos públicos e eventos
             </p>
@@ -70,12 +70,12 @@ export default function ServicosPage() {
             {serviceCategories.map((category, index) => (
               <Card
                 key={index}
-                className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-2 hover:border-primary/30"
+                className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-2 hover:border-[#5FBD5D]/30"
               >
                 <CardHeader>
                   <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                      <category.icon className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors" />
+                    <div className="w-14 h-14 bg-gradient-to-br from-[#A4D500]/20 to-[#4DD0E1]/20 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:from-[#A4D500]/40 group-hover:to-[#4DD0E1]/40 group-hover:scale-110 transition-all duration-300">
+                      <category.icon className="w-7 h-7 text-[#5FBD5D] transition-colors" />
                     </div>
                     <CardTitle className="text-xl text-balance">{category.title}</CardTitle>
                   </div>
@@ -84,7 +84,7 @@ export default function ServicosPage() {
                   <ul className="space-y-3">
                     {category.services.map((service, serviceIndex) => (
                       <li key={serviceIndex} className="flex items-start gap-3 text-muted-foreground">
-                        <span className="text-primary mt-1 font-bold">•</span>
+                        <span className="gradient-text mt-1 font-bold">•</span>
                         <span className="leading-relaxed">{service}</span>
                       </li>
                     ))}
@@ -107,13 +107,13 @@ export default function ServicosPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:+5514998851685"
-                className="inline-flex items-center justify-center px-8 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
+                className="inline-flex items-center justify-center px-8 py-3 gradient-bg text-white rounded-lg font-medium hover:opacity-90 transition-opacity shadow-lg"
               >
                 (14) 99885-1685
               </a>
               <a
                 href="mailto:ambientalcore@gmail.com"
-                className="inline-flex items-center justify-center px-8 py-3 bg-secondary text-secondary-foreground rounded-lg font-medium hover:bg-secondary/90 transition-colors"
+                className="inline-flex items-center justify-center px-8 py-3 bg-secondary text-secondary-foreground rounded-lg font-medium hover:bg-secondary/90 transition-colors shadow-lg"
               >
                 ambientalcore@gmail.com
               </a>

@@ -119,3 +119,20 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-gradient-to-r from-[#A4D500] via-[#5FBD5D] to-[#4DD0E1] bg-clip-text text-transparent;
+  }
+  
+  .gradient-bg {
+    @apply bg-gradient-to-r from-[#A4D500] via-[#5FBD5D] to-[#4DD0E1];
+  }
+  
+  .gradient-border {
+    @apply border-2 border-transparent bg-clip-padding;
+    background-image: linear-gradient(white, white), linear-gradient(to right, #A4D500, #5FBD5D, #4DD0E1);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+}
