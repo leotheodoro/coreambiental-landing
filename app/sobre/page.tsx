@@ -7,19 +7,19 @@ export default function SobrePage() {
       name: "Eduardo Mallet",
       role: "Engenheiro Ambiental e Sanitarista",
       description: "Mestrado em Meio Ambiente, Recursos Hídricos e Saneamento Ambiental.",
-      image: "/environmental-engineer-portrait.png",
+      image: "/eduardo.jpg",
     },
     {
       name: "Gabriela Faria Crispim",
       role: "Bióloga",
       description: "7 anos de experiência no setor público e especializada em ESG.",
-      image: "/professional-biologist-woman-portrait.jpg",
+      image: "/gabriela.jpg",
     },
     {
       name: "Tamiris Teixeira Verjiao",
       role: "Bióloga",
       description: "Especialista em Licenciamento Ambiental e gestão pública.",
-      image: "/professional-biologist-woman-portrait.jpg",
+      image: "/tamiris.jpg",
     },
   ]
 
