@@ -85,7 +85,7 @@ export default function InformacoesPage() {
               </a>
               <a
                 href="mailto:ambientalcore@gmail.com"
-                className="inline-flex items-center justify-center px-8 py-3 bg-secondary text-secondary-foreground rounded-lg font-medium hover:bg-secondary/90 transition-colors shadow-lg"
+                className="inline-flex items-center justify-center px-8 py-3 gradient-bg text-white rounded-lg font-medium hover:opacity-90 transition-opacity shadow-lg"
               >
                 Enviar e-mail
               </a>
