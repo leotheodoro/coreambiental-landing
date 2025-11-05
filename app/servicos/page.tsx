@@ -52,11 +52,22 @@ export default function ServicosPage() {
   return (
     <main className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-[#A4D500]/10 via-background to-[#4DD0E1]/10">
-        <div className="container mx-auto px-4">
+      <section className="relative py-20 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/bg.jpg"
+            alt="Background"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-linear-to-br from-black/60 via-black/50 to-black/60" />
+        </div>
+        
+        {/* Content */}
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance gradient-text">Nossos Serviços</h1>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance text-white drop-shadow-lg">Nossos Serviços</h1>
+            <p className="text-lg text-white/90 leading-relaxed drop-shadow-md">
               Soluções completas em consultoria ambiental e agrícola para empresas, órgãos públicos e eventos
             </p>
           </div>
@@ -74,7 +85,7 @@ export default function ServicosPage() {
               >
                 <CardHeader>
                   <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-[#A4D500]/20 to-[#4DD0E1]/20 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:from-[#A4D500]/40 group-hover:to-[#4DD0E1]/40 group-hover:scale-110 transition-all duration-300">
+                    <div className="w-14 h-14 bg-linear-to-br from-[#A4D500]/20 to-[#4DD0E1]/20 rounded-lg flex items-center justify-center shrink-0 group-hover:from-[#A4D500]/40 group-hover:to-[#4DD0E1]/40 group-hover:scale-110 transition-all duration-300">
                       <category.icon className="w-7 h-7 text-[#5FBD5D] transition-colors" />
                     </div>
                     <CardTitle className="text-xl text-balance">{category.title}</CardTitle>

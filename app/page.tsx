@@ -70,7 +70,7 @@ export default function HomePage() {
           {/* Dark overlay for readability */}
           <div className="absolute inset-0 bg-black/50" />
           {/* Brand gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#A4D500]/30 via-[#5FBD5D]/20 to-[#4DD0E1]/30 mix-blend-overlay" />
+          <div className="absolute inset-0 bg-linear-to-r from-[#A4D500]/30 via-[#5FBD5D]/20 to-[#4DD0E1]/30 mix-blend-overlay" />
         </div>
 
         {/* Hero Content */}
@@ -88,13 +88,13 @@ export default function HomePage() {
             </div>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-150 text-balance">
-            Consultoria ambiental e agrícola
+            Consultoria Ambiental e Agrícola
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300 leading-relaxed">
             Oferecemos soluções sustentáveis e eficientes para empresas e eventos.
           </p>
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-500">
-            <Button asChild size="lg" className="text-lg px-8 py-6 bg-gradient-to-r from-[#A4D500] via-[#5FBD5D] to-[#4DD0E1] hover:opacity-90 transition-opacity">
+            <Button asChild size="lg" className="text-lg px-8 py-6 bg-linear-to-r from-[#A4D500] via-[#5FBD5D] to-[#4DD0E1] hover:opacity-90 transition-opacity">
               <Link href="/servicos">Conheça nossos serviços</Link>
             </Button>
           </div>
@@ -115,7 +115,7 @@ export default function HomePage() {
             {services.map((service, index) => (
               <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-2 hover:border-[#5FBD5D]/30">
                 <CardContent className="p-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#A4D500]/20 to-[#4DD0E1]/20 rounded-lg flex items-center justify-center mb-4 group-hover:from-[#A4D500]/40 group-hover:to-[#4DD0E1]/40 group-hover:scale-110 transition-all duration-300">
+                  <div className="w-12 h-12 bg-linear-to-br from-[#A4D500]/20 to-[#4DD0E1]/20 rounded-lg flex items-center justify-center mb-4 group-hover:from-[#A4D500]/40 group-hover:to-[#4DD0E1]/40 group-hover:scale-110 transition-all duration-300">
                     <service.icon className="w-6 h-6 text-[#5FBD5D] transition-colors" />
                   </div>
                   <h3 className="text-xl font-bold mb-4 text-balance">{service.title}</h3>
