@@ -13,7 +13,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Core Ambiental - Consultoria Ambiental e Agrícola",
   description:
-    "Especialistas em soluções ambientais integradas, oferecendo serviços de consultoria com excelência técnica e compromisso com a sustentabilidade.",
+    "Especialistas em soluções ambientais e agrícolas, oferecendo serviços de consultoria com excelência técnica e compromisso com a sustentabilidade.",
   generator: "v0.app",
   icons: {
     icon: "/favicon.png",

@@ -66,7 +66,7 @@ export default function SobrePage() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-balance">Nossa História</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              A Core Ambiental é uma consultoria especializada em soluções ambientais, com foco em sustentabilidade,
+              A Core Ambiental é uma consultoria especializada em soluções ambientais e agrícolas, com foco em sustentabilidade,
               licenciamento e projetos técnicos. Nossa equipe multidisciplinar une conhecimento científico, experiência
               prática e inovação para auxiliar empresas e órgãos públicos a alcançarem resultados sustentáveis e
               responsáveis.
@@ -86,7 +86,7 @@ export default function SobrePage() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Missão</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Oferecer soluções ambientais integradas e inovadoras que auxiliem nossos clientes a alcançarem
+                  Oferecer soluções ambientais e agrícolas que auxiliem nossos clientes a alcançarem
                   sustentabilidade em seus negócios, garantindo conformidade legal e excelência técnica.
                 </p>
               </CardContent>

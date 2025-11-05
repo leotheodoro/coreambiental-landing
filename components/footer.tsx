@@ -21,7 +21,7 @@ export function Footer() {
               />
             </div>
             <p className="text-sm leading-relaxed text-white/90">
-              Especialistas em soluções ambientais integradas, oferecendo serviços de consultoria com excelência técnica
+              Especialistas em soluções ambientais e agrícolas, oferecendo serviços de consultoria com excelência técnica
               e compromisso com a sustentabilidade.
             </p>
           </div>

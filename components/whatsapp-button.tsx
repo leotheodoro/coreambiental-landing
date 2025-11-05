@@ -12,7 +12,7 @@ export function WhatsAppButton() {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-[9999] flex items-:lipsenter justify-center w-16 h-16 gradient-bg text-white rounded-full shadow-lg hover:scale-110 hover:shadow-xl transition-all duration-300"
+      className="fixed bottom-6 right-6 z-9999 flex items-center justify-center w-16 h-16 gradient-bg text-white rounded-full shadow-lg hover:scale-110 hover:shadow-xl transition-all duration-300"
       aria-label="Contato via WhatsApp"
     >
       <IconBrandWhatsapp className="w-9 h-9" stroke={1.5} />
