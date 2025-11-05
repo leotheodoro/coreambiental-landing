@@ -58,6 +58,16 @@ export function Header() {
               Serviços
             </Link>
             <Link
+              href="/artigos"
+              className={`relative pb-1 transition-all ${
+                isActive("/artigos") || pathname?.startsWith("/artigos/")
+                  ? "gradient-text font-semibold after:scale-x-100"
+                  : "text-foreground hover:gradient-text"
+              } after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-gradient-to-r after:from-[#A4D500] after:via-[#5FBD5D] after:to-[#4DD0E1] after:origin-left after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300`}
+            >
+              Artigos
+            </Link>
+            <Link
               href="/informacoes"
               className={`relative pb-1 transition-all ${
                 isActive("/informacoes")
@@ -135,6 +145,17 @@ export function Header() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Serviços
+              </Link>
+              <Link
+                href="/artigos"
+                className={`transition-all py-2 ${
+                  isActive("/artigos") || pathname?.startsWith("/artigos/")
+                    ? "gradient-text font-semibold border-b-2 border-[#5FBD5D]"
+                    : "text-foreground hover:gradient-text"
+                }`}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Artigos
               </Link>
               <Link
                 href="/informacoes"
