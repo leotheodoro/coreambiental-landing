@@ -52,22 +52,11 @@ export default function ServicosPage() {
   return (
     <main className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/bg.jpg"
-            alt="Background"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-linear-to-br from-black/60 via-black/50 to-black/60" />
-        </div>
-        
-        {/* Content */}
-        <div className="container mx-auto px-4 relative z-10">
+      <section className="relative py-20 bg-linear-to-br from-[#A4D500]/10 via-background to-[#4DD0E1]/10">
+        <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance text-white drop-shadow-lg">Nossos Serviços</h1>
-            <p className="text-lg text-white/90 leading-relaxed drop-shadow-md">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance gradient-text">Nossos Serviços</h1>
+            <p className="text-lg text-muted-foreground leading-relaxed">
               Soluções completas em consultoria ambiental e agrícola para empresas, órgãos públicos e eventos
             </p>
           </div>
@@ -77,32 +66,75 @@ export default function ServicosPage() {
       {/* Services Grid */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {serviceCategories.map((category, index) => (
-              <Card
-                key={index}
-                className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-2 hover:border-[#5FBD5D]/30"
-              >
-                <CardHeader>
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-linear-to-br from-[#A4D500]/20 to-[#4DD0E1]/20 rounded-lg flex items-center justify-center shrink-0 group-hover:from-[#A4D500]/40 group-hover:to-[#4DD0E1]/40 group-hover:scale-110 transition-all duration-300">
-                      <category.icon className="w-7 h-7 text-[#5FBD5D] transition-colors" />
+          <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto items-center">
+            {/* Left Column - First 3 Services */}
+            <div className="space-y-6">
+              {serviceCategories.slice(0, 3).map((category, index) => (
+                <Card
+                  key={index}
+                  className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-2 hover:border-[#5FBD5D]/30"
+                >
+                  <CardHeader>
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 bg-linear-to-br from-[#A4D500]/20 to-[#4DD0E1]/20 rounded-lg flex items-center justify-center shrink-0 group-hover:from-[#A4D500]/40 group-hover:to-[#4DD0E1]/40 group-hover:scale-110 transition-all duration-300">
+                        <category.icon className="w-6 h-6 text-[#5FBD5D] transition-colors" />
+                      </div>
+                      <CardTitle className="text-lg text-balance">{category.title}</CardTitle>
                     </div>
-                    <CardTitle className="text-xl text-balance">{category.title}</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-3">
-                    {category.services.map((service, serviceIndex) => (
-                      <li key={serviceIndex} className="flex items-start gap-3 text-muted-foreground">
-                        <span className="gradient-text mt-1 font-bold">•</span>
-                        <span className="leading-relaxed">{service}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            ))}
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-2">
+                      {category.services.map((service, serviceIndex) => (
+                        <li key={serviceIndex} className="flex items-start gap-2 text-muted-foreground text-sm">
+                          <span className="gradient-text mt-1 font-bold">•</span>
+                          <span className="leading-relaxed">{service}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            {/* Center Column - Image */}
+            <div className="flex items-center justify-center lg:px-4">
+              <div className="relative w-full max-w-md aspect-square rounded-2xl overflow-hidden">
+                <img
+                  src="/environmental.png"
+                  alt="Serviços Ambientais"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Right Column - Last 3 Services */}
+            <div className="space-y-6">
+              {serviceCategories.slice(3, 6).map((category, index) => (
+                <Card
+                  key={index}
+                  className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-2 hover:border-[#5FBD5D]/30"
+                >
+                  <CardHeader>
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 bg-linear-to-br from-[#A4D500]/20 to-[#4DD0E1]/20 rounded-lg flex items-center justify-center shrink-0 group-hover:from-[#A4D500]/40 group-hover:to-[#4DD0E1]/40 group-hover:scale-110 transition-all duration-300">
+                        <category.icon className="w-6 h-6 text-[#5FBD5D] transition-colors" />
+                      </div>
+                      <CardTitle className="text-lg text-balance">{category.title}</CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-2">
+                      {category.services.map((service, serviceIndex) => (
+                        <li key={serviceIndex} className="flex items-start gap-2 text-muted-foreground text-sm">
+                          <span className="gradient-text mt-1 font-bold">•</span>
+                          <span className="leading-relaxed">{service}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </section>
