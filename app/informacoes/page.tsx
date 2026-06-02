@@ -78,7 +78,7 @@ export default function InformacoesPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+5514998851685"
+                href="tel:+5514998496034"
                 className="inline-flex items-center justify-center px-8 py-3 gradient-bg text-white rounded-lg font-medium hover:opacity-90 transition-opacity shadow-lg"
               >
                 Ligar agora

@@ -6,13 +6,6 @@ import { faLeaf, faFlask, faHandshake, faLightbulb } from "@fortawesome/free-sol
 export default function SobrePage() {
   const team = [
     {
-      name: "Eduardo Mallet",
-      role: "Engenheiro Ambiental e Sanitarista",
-      description: "Engenheiro Ambiental e Sanitarista com Mestrado em Meio Ambiente, Recursos Hídricos e Saneamento Ambiental. Possui experiência comsolidada em consultoria e desenvolvimento de projetos ambientais e agrícolas.",
-      image: "/eduardo.jpg",
-      linkedin: "https://www.linkedin.com/in/eduardo-rodrigo-viana-mallet-114567212/",
-    },
-    {
       name: "Gabriela Faria Crispim",
       role: "Bióloga",
       description: "Bióloga com 7 anos de experiência no setor público, especializada em projetos ambientais. Sua atuação abrange licenciamento ambiental e certificação de sustentabilidade ESG.",

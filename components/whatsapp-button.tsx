@@ -3,7 +3,7 @@
 import { IconBrandWhatsapp } from "@tabler/icons-react"
 
 export function WhatsAppButton() {
-  const phoneNumber = "5514998851685" // Format: country code + number without + or spaces
+  const phoneNumber = "5514998496034" // Format: country code + number without + or spaces
   const message = "Olá! Gostaria de saber mais sobre os serviços da Core Ambiental."
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
 

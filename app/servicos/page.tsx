@@ -35,6 +35,10 @@ export default function ServicosPage() {
         "Levantamentos Topográficos",
         "Monitoramento Ambiental",
         "Inspeção Ambiental",
+        "Monitoramento de Ruídos Ambientais",
+        "Modelagem de Ruído Ambiental",
+        "Diagnóstico de Ruído Ambiental",
+        "Laudo de Conformidade para Medição de Campo Elétrico e Magnético",
       ],
     },
     {
@@ -149,10 +153,10 @@ export default function ServicosPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+5514998851685"
+                href="tel:+5514998496034"
                 className="inline-flex items-center justify-center px-8 py-3 gradient-bg text-white rounded-lg font-medium hover:opacity-90 transition-opacity shadow-lg"
               >
-                (14) 99885-1685
+                (14) 99849-6034
               </a>
               <a
                 href="mailto:ambientalcore@gmail.com"
